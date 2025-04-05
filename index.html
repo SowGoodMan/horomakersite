@@ -3,11 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Web</title>
+    <title>HoroMaker - Accueil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .links a {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
+        .download-link {
+            background-color: #28a745;
+        }
+        .download-link:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site web !</h1>
-    <p>Ceci est une page d'exemple déployée sur GitHub Pages.</p>
-    <a href="about.html">À propos</a> <!-- Lien vers la nouvelle page -->
+    <header>
+        <h1>Bienvenue sur HoroMaker</h1>
+    </header>
+    <div class="container">
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy — HoroMaker</a>
+            <a href="terms-of-service.html">Terms of Service — HoroMaker</a>
+            <a href="downloads/yourfile.zip" class="download-link" download>Télécharger le fichier</a>
+        </div>
+    </div>
 </body>
 </html>
